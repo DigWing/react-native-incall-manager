@@ -884,7 +884,7 @@ RCT_EXPORT_METHOD(getIsWiredHeadsetPluggedIn:(RCTPromiseResolveBlock)resolve
                     break;
                 case AVAudioSessionRouteChangeReasonCategoryChange:
                     NSLog(@"RNInCallManager.AudioRouteChange.Reason: CategoryChange. category=%@ mode=%@", _audioSession.category, _audioSession.mode);
-                    [self updateAudioRoute];
+                    //[self updateAudioRoute];
                     break;
                 case AVAudioSessionRouteChangeReasonOverride:
                     NSLog(@"RNInCallManager.AudioRouteChange.Reason: Override");
